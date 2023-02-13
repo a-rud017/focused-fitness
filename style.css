@@ -104,7 +104,7 @@ img {
 
 /* SERVICES */
 .services {
-    height: 600px;
+    height: 700px;
     padding-top: 20px;
 }
 
@@ -114,6 +114,7 @@ img {
 
 .services .container p {
     font-size: 22px;
+    margin-top: 20px;
 }
 
 .services-heading {
@@ -130,10 +131,9 @@ img {
 }
 
 
-
 /* MEMBERSHIPS */
 .membership {
-    height: 650px;
+    height: 750px;
     color: #fff;
     padding-top: 20px;
     background-image: url(assets/images/woman-bar.jpg);
@@ -153,10 +153,17 @@ img {
     font-size: 30px;
 }
 
+.membership .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+
 .membership .card h4, h5 {
     font-size: 28px;
     font-weight: 500;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .membership .card h4 {
@@ -182,6 +189,8 @@ img {
 
 .membership .btn {
     margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
@@ -203,8 +212,9 @@ img {
 }
 
 .classes .container .grid div img {
-    min-height: 100%;
+    height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 .classes .container a {
@@ -222,6 +232,9 @@ img {
     border-right: 1px solid var(--secondary-color);
 }
 
+.footer .container p {
+    margin-top: 15px;
+}
 
 .footer .social a {
     margin: 0 10px;
@@ -255,9 +268,15 @@ img {
         text-align: center;
         margin-top: 40px;
     }
-
+   
     .services h3 {
         text-align: center;
+    }
+
+
+    .classes .container .grid div img{
+        max-height: 500px;
+        max-width: 400px;
     }
     
     .footer .container{
@@ -272,8 +291,14 @@ img {
         align-self: center;
     }
 
+    .footer .container .social,
     .footer .container h3 {
         border-bottom: 1px solid var(--secondary-color);  
+        padding-bottom: 10px;
+    }
+
+    .footer .container h3{
+        border-top: 1px solid var(--secondary-color);
     }
 
     .footer .container div + nav {
@@ -286,8 +311,6 @@ img {
 
     .footer .container nav ul {
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
         gap: 10px;
     }
 
@@ -295,10 +318,10 @@ img {
         padding: 0 10px;
     }
 
-    .footer .container nav ul *:nth-child(2) {
+    /* .footer .container nav ul *:nth-child(2) {
         border-left: 1px solid var(--secondary-color);
         border-right: 1px solid var(--secondary-color);
-    }
+    } */
 
     /* .features-head,
     .features-sub-head,
